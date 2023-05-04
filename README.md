@@ -1,5 +1,5 @@
-# node-hello-world
-## How to run *node-hello-world* pulumi app on MacOS
+# pulumi-hello-world
+## How to run *pulumi-hello-world* pulumi app on MacOS
 1. Install pulumi
 
     ```
@@ -27,8 +27,8 @@
 4. Create a folder and unzip the code.
     ```
     mkdir pulumi && cd pulumi
-    unzip node-hello-world
-    cd node-hello-world
+    unzip pulumi-hello-world
+    cd pulumi-hello-world
     ```
 
 4. Deploy the app into k8s cluster using the following command
@@ -64,6 +64,7 @@ You should be able to see similar output.
 Hello from the Kubernetes worker node with IP address: 192.168.65.4
 ```
 ![hello](hello.png)
+
 ------------------
 ## Building and Updating NodeJS Application
 This repository contains a nodejs application under `app` directory. It hosts the endpoint `/hello`, which
