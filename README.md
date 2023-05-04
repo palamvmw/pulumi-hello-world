@@ -63,7 +63,7 @@ You should be able to see similar output.
 ```
 Hello from the Kubernetes worker node with IP address: 192.168.65.4
 ```
-
+![hello](hello.png)
 ------------------
 ## Building and Updating NodeJS Application
 This repository contains a nodejs application under `app` directory. It hosts the endpoint `/hello`, which
