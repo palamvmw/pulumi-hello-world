@@ -1,8 +1,7 @@
-import * as pulumi from "@pulumi/pulumi";
 import * as k8s from "@pulumi/kubernetes";
-import * as kx from "@pulumi/kubernetesx";
 
 const appName = "hello-app";
+const dockerImg = "docker.io/amitpal9/node-hello-world:latest";
 const appLabels = { app: appName };
 
 // Create a Kubernetes namespace for the application.
@@ -30,7 +29,7 @@ const deployment = new k8s.apps.v1.Deployment(appName, {
                 containers: [
                     {
                         name: appName,
-                        image: "docker.io/amitpal9/node-hello-world:latest",
+                        image: dockerImg,
                         ports: [{ name: "http", containerPort: 9090 }],
                         env: [
                             {
